@@ -1,0 +1,1 @@
+*/5 * * * * root powershell /scripts/Invoke-vFluxIOPS.ps1 >> /var/log/cron.log 2>&1
