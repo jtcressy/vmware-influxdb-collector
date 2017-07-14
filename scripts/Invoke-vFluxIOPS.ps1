@@ -49,6 +49,15 @@
 #>
 
 [cmdletbinding()]
+param (
+
+    #String. The IP Address or DNS name of the vCenter Server machine.
+    [Parameter(HelpMessage='vCenter Name or IP Address')]
+    [String]$Computer,
+
+    #Switch.  Optionally, activate this switch to show debug info for InfluxDB writes.
+    [switch]$ShowStats
+)
 
 Begin {
 
